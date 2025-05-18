@@ -66,6 +66,21 @@ tw-link span,
     margin: 0 auto !important;
     padding: 0 !important;
     display: block !important;
+  }
+
+  /* Target only passages with the imagemap tag */
+  tw-passage[tags~="imagemap"] {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  tw-passage[tags~="imagemap"] img {
+    max-width: 100% !important;
+    max-height: calc(100vh - 2cm) !important;
+    object-fit: contain !important;
+    margin: 1cm auto 0 auto !important; /* Top margin of 1cm */
+    padding: 0 !important;
+    display: block !important;
   }</style><script role="script" id="twine-user-script" type="text/twine-javascript">/*! Image Map Resizer (imageMapResizer.min.js ) - v1.0.10 - 2019-04-10
  *  Desc: Resize HTML imageMap to scaled image.
  *  Copyright: (c) 2019 David J. Bradshaw - dave@bradshaw.net
